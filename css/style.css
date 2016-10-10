@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td,
+form,
+input,
+select,
+textarea,
+span,
+img,
+a,
+em,
+strong,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 14px;
+}
+
+input,
+select,
+textarea {
+    vertical-align: middle;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    color: #009999;
+}
+
+.clear {
+    clear: both;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+ol,
+ul,
+th,
+td,
+form,
+fieldset,
+input,
+button,
+textarea {
+    margin: 0;
+    padding: 0;
+    font-size: 12;
+    text-align: left;
+}
+
+html {
+    word-wrap: break-word;
+    -webkit-text-size-adjust: none;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    empty-cells: show;
+    font-size: inherit;
+    border-spacing: 0;
+    text-align: center;
+}
+
+input,
+button,
+textarea,
+select {
+    font-size: 100%;
+}
+
+body,
+input,
+button,
+textarea,
+select,
+option {
+    font-size: normal;
+}
+
+a,
+input,
+textarea {
+    outline: 0;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+li,
+img,
+label,
+input {
+    vertical-align: middle;
+}
+
+.container,
+.index,
+.second,
+.third,
+.yes,
+.no {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.index {
+    background: url(../img/index.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.index .go {
+    width: 9rem;
+    height: 2rem;
+    background: url(../img/go.png) no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    left: 50%;
+    bottom: 0.2rem;
+    margin-left: -4.5rem;
+}
+
+.second {
+    background: url(../img/second.jpg) no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    display: none;
+}
+.second .main{
+    width: 100%;
+    position: absolute;
+    top:0;
+    bottom:2rem;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.second .footer{
+    width: 100%;
+    height: 2rem;
+    position: fixed;
+    bottom:0;
+    left: 0;
+}
+.second .imgall{
+    width: 15rem;
+    height: 10.5rem;
+    margin-top: 1%;
+    margin-left: 0 auto;
+}
+.second .imgall li{
+    width: 4.2rem;
+    height: 4.5rem;
+    float: left;
+    margin-left: 0.55rem;
+    margin-top: 0.4rem;
+}
+.second .imgall li img{
+    width: 100%;
+    height: 100%;
+}
+.second .tip{
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.1rem;
+    padding: 0 1rem 0 1rem;
+}
+.second .tip h2{
+    font-size: 0.7rem;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 1rem;
+}
+.second .link{
+    width: 100%;
+    height: 8rem;
+}
+.second .link .imgs{
+    width: 100%;
+    height: 5.1rem;
+    clear: both;
+}
+.second .link .imgl,.imgr{
+    width: 4.7rem;
+    height: 5.1rem;
+    float: left;
+    position: relative;
+}
+.second .link .imgl{
+    margin-left: 2.5rem;
+}
+.second .link .imgr{
+    margin-left: 1.8rem;
+}
+.second .link .imgl img{
+    width: 100%;
+    height: 100%;
+}
+.second .link .imgr img{
+    width: 100%;
+    height: 100%;
+}
+.second .link .imgr .dask{
+    width: 4.7rem;
+    height: 5.1rem;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+}
+.second .link .numl{
+    width: 7.7rem;
+    height: 1rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-left: 3.5rem;
+    margin-right: 3.7rem;
+    font-size: 0.8rem;
+}
+.second .link .numr{
+    width: 3.4rem;
+    height: 0.8rem;
+    border:none;
+    font-size: 0.5rem;
+}
+
+.second .link .mes{
+    width: 100%;
+    height: 1rem;
+    font-size: 0.7rem;
+    color: #ffff33;
+    margin-left: 3.5rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+.second .footer .tijiao{
+    width: 9rem;
+    height: 2rem;
+    background: url(../img/tijiao.png) no-repeat;
+    background-size: 100% 100%;
+    margin:0 auto;
+}
+.third {
+    background: url(../img/third.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    display: none;
+}
+
+.third .chuizi {
+    width: 5.25rem;
+    height: 6.25rem;
+    position: absolute;
+    left: 9.5rem;
+    top: 5%;
+    background: url(../img/chuizi.png) no-repeat;
+    background-size: 100% 100%;
+    animation:move 1.2s linear forwards infinite;
+    -webkit-animation:move 1.2s linear forwards infinite;
+}
+@-webkit-keyframes move{
+    0%{
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    20%{
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+    50%{
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+    }
+    70%{
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+    100%{
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+}
+@keyframes move{
+    0%{
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    20%{
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+    50%{
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+    }
+    70%{
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+    100%{
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+}
+.third .start {
+    width: 9rem;
+    height: 2rem;
+    background: url(../img/niu_1.png) no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    bottom: 0.45rem;
+    left: 50%;
+    margin-left: -4.5rem;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.yes{
+    background: url(../img/yes.jpg) no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+.yes .show{
+    width: 14rem;
+    height: 4rem;
+    position: absolute;
+    top:1.2rem;
+    left: 2.5rem;
+    font-size: 0.8rem;
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    
+}
+.yes .show p{
+    -webkit-text-stroke:0.3px #ff9933;
+}
+.yes .show p:nth-child(1){
+    padding-left: 2rem;
+}
+.yes .show p:nth-child(2){
+    font-size: 1.1rem;
+}
+.yes .show span{
+    font-size: 1.1rem;
+}
+.yes .times{
+    width: 9rem;
+    height: 2rem;
+    background: url(../img/niu_1.png) no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    bottom: 0.45rem;
+    left: 50%;
+    margin-left: -4.5rem;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.no{
+    background: url(../img/no.jpg) no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+.no .times{
+    width: 9rem;
+    height: 2rem;
+    background: url(../img/niu_1.png) no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    bottom: 0.45rem;
+    left: 50%;
+    margin-left: -4.5rem;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.no .ms{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+.no #alert{
+    width: 11.4rem;
+    height: 13.35rem;
+    position: absolute;
+    top:50%;
+    margin-top: -6.675rem;
+    left: 50%;
+    margin-left: -5.75rem;
+    z-index: 1000;
+    display: none;
+}

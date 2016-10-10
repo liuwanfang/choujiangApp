@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-ComPatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement, //获取html标签
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="container" id="container">
+        <div class="index tt">
+            <div class="go" id="go"></div>
+            <div class="abc" id="abc">212</div>
+        </div>
+        <div class="second tt">
+            <div class="main" id="main">
+                <ul class="imgall" id="imgall">
+                    <li><img src="./img/question.png" alt="图片出错"></li>
+                    <li><img src="./img/question.png" alt="图片出错"></li>
+                    <li><img src="./img/question.png" alt="图片出错"></li>
+                    <li><img src="./img/question.png" alt="图片出错"></li>
+                    <li><img src="./img/question.png" alt="图片出错"></li>
+                    <li><img src="./img/question.png" alt="图片出错"></li>
+                </ul>
+                <div class="tip">
+                    <h2>请寻找拥有匹配图片的其他抽奖人，输入该图片的编号。</h2>
+                </div>
+                <div class="link" id="link">
+                    <div class="imgs">
+                        <div class="imgl"><img src="./img/question.png" alt="图片出错" id="imgl"></div>
+                        <div class="imgr">
+                            <img src="./img/question.png" alt="图片出错" id="imgr">
+                            <div class="dask"></div>
+                        </div>
+                    </div>
+                    <span class="numl" id="numl">xxxxx</span>
+                    <input type="number" class="numr" id="numr">
+                    <p class="mes" id="mes">编号输入有误，请重新输入！</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="tijiao" id="tijiao"></div>
+            </div>  
+        </div>
+        <div class="third tt" id="third">
+            <div class="chuizi"></div>
+            <div class="start" id="start">开始</div>
+        </div>
+        <div class="yes tt" id="yes">
+            <div class="show">
+                <p>恭喜您中奖啦！</p>
+                <p>中奖号码：<span id="prize">45643232</span></p>
+            </div>
+            <div class="times" id="yesbtn">游戏已结束</div>
+        </div>
+        <div class="no tt" id="no">
+            <div class="times" id="nobtn">还有四次机会</div>
+            <div class="ms" id="ms"></div>
+            <img src="./img/alert.jpg" alt="图片出错" id="alert">
+        </div>
+    </div>
+
+
+</body>
+<script src="lib/zepto.min.js"></script>
+<script src="lib/myjs.js"></script>
+</html>
